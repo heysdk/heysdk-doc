@@ -1,9 +1,9 @@
 xmlmerge-js
 ===========
 
-**mlmerge-js** ÊÇÒ»¸öºÏ²¢xmlµÄ¹¤¾ß¿â¡£
+**mlmerge-js** æ˜¯ä¸€ä¸ªåˆå¹¶xmlçš„å·¥å…·åº“ã€‚
 
-ËüµÄ×î³õÄ¿µÄÊÇÓÃÀ´ºÏ²¢¸÷ÖÖxmlÅäÖÃÎÄ¼şµÄ£¬Æ©Èç**AndroidManifest.xml**¡£
+å®ƒçš„æœ€åˆç›®çš„æ˜¯ç”¨æ¥åˆå¹¶å„ç§xmlé…ç½®æ–‡ä»¶çš„ï¼Œè­¬å¦‚**AndroidManifest.xml**ã€‚
 
     <?xml version="1.0" encoding="utf-8"?>
     
@@ -23,7 +23,7 @@ xmlmerge-js
     </manifest>
 
 
-ÕâÊÇÒ»¸öÆÕÍ¨µÄ**AndroidManifest.xml**£¬ÎÒÃÇÏëÎªËüÔö¼ÓÒ»×éÊôĞÔ
+è¿™æ˜¯ä¸€ä¸ªæ™®é€šçš„**AndroidManifest.xml**ï¼Œæˆ‘ä»¬æƒ³ä¸ºå®ƒå¢åŠ ä¸€ç»„å±æ€§
 
     <?xml version="1.0" encoding="utf-8"?>
 
@@ -40,7 +40,7 @@ xmlmerge-js
       <uses-permission android:name="android.permission.READ_PHONE_STATE"/> 
     </manifest>
     
-ÆäÊµ¾ÍÊÇ½«Õâ2¸öxmlºÏ²¢ÔÚÒ»Æğ£¬ÎªÁË·½±ãµÄºÏ²¢xml£¬ÎÒÃÇĞèÒªÒ»¸ö¼òµ¥µÄÅäÖÃ£¬Æ©Èç¸æËß**mlmerge-js** *manifest* ºÍ *application* ÊÇÖ±½ÓÆ¥ÅäµÄ£¬²»ĞèÒªÆ¥ÅäÈÎºÎÊôĞÔ£¬¶ø*activity* ºÍ *uses-permission* ÊÇĞèÒªÆ¥Åä *android:name* µÄ£¬ÕâÑù±ÜÃâÖØ¸´Ìí¼ÓÊôĞÔ£¬ÄÇÃ´ÎÒÃÇÌá¹©ÁËÒ»¸öcsvµÄÅäÖÃÎÄ¼ş¡£
+å…¶å®å°±æ˜¯å°†è¿™2ä¸ªxmlåˆå¹¶åœ¨ä¸€èµ·ï¼Œä¸ºäº†æ–¹ä¾¿çš„åˆå¹¶xmlï¼Œæˆ‘ä»¬éœ€è¦ä¸€ä¸ªç®€å•çš„é…ç½®ï¼Œè­¬å¦‚å‘Šè¯‰**mlmerge-js** *manifest* å’Œ *application* æ˜¯ç›´æ¥åŒ¹é…çš„ï¼Œä¸éœ€è¦åŒ¹é…ä»»ä½•å±æ€§ï¼Œè€Œ*activity* å’Œ *uses-permission* æ˜¯éœ€è¦åŒ¹é… *android:name* çš„ï¼Œè¿™æ ·é¿å…é‡å¤æ·»åŠ å±æ€§ï¼Œé‚£ä¹ˆæˆ‘ä»¬æä¾›äº†ä¸€ä¸ªcsvçš„é…ç½®æ–‡ä»¶ã€‚
 
     nodename,attrname
     manifest,*
@@ -48,7 +48,7 @@ xmlmerge-js
     activity,android:name
     uses-permission,android:name
 
-ÕâÑù£¬**mlmerge-js**¾ÍÄÜÕıÈ·µÄºÏ²¢2¸öxmlÁË£¬½á¹ûÈçÏÂ£º
+è¿™æ ·ï¼Œ**mlmerge-js**å°±èƒ½æ­£ç¡®çš„åˆå¹¶2ä¸ªxmläº†ï¼Œç»“æœå¦‚ä¸‹ï¼š
 
     <?xml version="1.0" encoding="utf-8"?>
 
@@ -74,7 +74,7 @@ xmlmerge-js
       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/> 
     </manifest>
 
-**mlmerge-js**µÄÀı×ÓÔÚ*samples*µÄ*test.js*ÏÂ
+**mlmerge-js**çš„ä¾‹å­åœ¨*samples*çš„*test.js*ä¸‹
 
     var xmlmerge = require('../xmlmerge.js');
     var fs = require('fs');

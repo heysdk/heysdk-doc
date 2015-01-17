@@ -1,23 +1,23 @@
-googleµÄandroid studioÕýÊ½°æ³öÁË£¬ËùÒÔadt¾ÍÃ»ÓÐÌá¹©ÕûºÏ°ü£¬ÏÖÔÚÐèÒª×Ô¼ºÏÂÔØeclipse´ÓÍ·´î½¨»·¾³£¬ÆäÊµgoogle¹Ù·½ÎÄµµËµµÃºÜÇå³þÁË£¬Ò»²½²½µÄÀ´×öÃ»É¶ÎÊÌâµÄ£¬ÕâÀï¼òµ¥ÁÐÒ»ÏÂ°É¡£
+googleçš„android studioæ­£å¼ç‰ˆå‡ºäº†ï¼Œæ‰€ä»¥adtå°±æ²¡æœ‰æä¾›æ•´åˆåŒ…ï¼ŒçŽ°åœ¨éœ€è¦è‡ªå·±ä¸‹è½½eclipseä»Žå¤´æ­å»ºçŽ¯å¢ƒï¼Œå…¶å®žgoogleå®˜æ–¹æ–‡æ¡£è¯´å¾—å¾ˆæ¸…æ¥šäº†ï¼Œä¸€æ­¥æ­¥çš„æ¥åšæ²¡å•¥é—®é¢˜çš„ï¼Œè¿™é‡Œç®€å•åˆ—ä¸€ä¸‹å§ã€‚
 
-1¡¢ÏÂÔØeclipse£¬eclipseÖ§³ÖµÄ»·¾³Ì«¶àÁË£¬ÎÒ½¨ÒéÊÇ²»Í¬µÄ¿ª·¢»·¾³¸É´àÓÃµ¥¶ÀµÄ°ü£¨Ïà¶Ô¶ÀÁ¢µÄ»·¾³Ì«ÖØÒªÁË£¬É³Ïä°¡£©£¬ËùÒÔ²»ÒªÔÚÏÖÓÐµÄeclipseÏÂÕÛÌÚÁË£¬ÖØÐÂÏÂÔØÒ»¸ö°É£¬ËµÊÇ3.7.2ÒÔÉÏ¼´¿É£¬ÎÒÏÂÔØµÄÊÇ×îÐÂµÄ4.4.1£¬**Eclipse IDE for Java Developers**¼´¿É
+1ã€ä¸‹è½½eclipseï¼Œeclipseæ”¯æŒçš„çŽ¯å¢ƒå¤ªå¤šäº†ï¼Œæˆ‘å»ºè®®æ˜¯ä¸åŒçš„å¼€å‘çŽ¯å¢ƒå¹²è„†ç”¨å•ç‹¬çš„åŒ…ï¼ˆç›¸å¯¹ç‹¬ç«‹çš„çŽ¯å¢ƒå¤ªé‡è¦äº†ï¼Œæ²™ç®±å•Šï¼‰ï¼Œæ‰€ä»¥ä¸è¦åœ¨çŽ°æœ‰çš„eclipseä¸‹æŠ˜è…¾äº†ï¼Œé‡æ–°ä¸‹è½½ä¸€ä¸ªå§ï¼Œè¯´æ˜¯3.7.2ä»¥ä¸Šå³å¯ï¼Œæˆ‘ä¸‹è½½çš„æ˜¯æœ€æ–°çš„4.4.1ï¼Œ**Eclipse IDE for Java Developers**å³å¯
 
-2¡¢´ò¿ªeclipse£¬workspaceÒ²µ¥¶À¸øÒ»¸öÄ¿Â¼°É£¬ÎÒ¸øµÄworkspace-adt
+2ã€æ‰“å¼€eclipseï¼Œworkspaceä¹Ÿå•ç‹¬ç»™ä¸€ä¸ªç›®å½•å§ï¼Œæˆ‘ç»™çš„workspace-adt
 
-3¡¢Èç¹û»úÆ÷ÀïÃæÒÔÇ°×°¹ýADT¡¢Android StudioÖ®ÀàµÄ£¬¿ÉÄÜÒÑ¾­ÓÐÒ»¸öºÜÍêÕûµÄ AndroidSDKÁË£¬ÕâÊ±²»½¨ÒéÖØÐÂÅäÖÃ£¬ËäÈ»½¨Òéeclipseµ¥¶À£¬µ«androidSDK£¬½¨Òé»¹ÊÇÅäÔÚÒ»Æð£¬
+3ã€å¦‚æžœæœºå™¨é‡Œé¢ä»¥å‰è£…è¿‡ADTã€Android Studioä¹‹ç±»çš„ï¼Œå¯èƒ½å·²ç»æœ‰ä¸€ä¸ªå¾ˆå®Œæ•´çš„ AndroidSDKäº†ï¼Œè¿™æ—¶ä¸å»ºè®®é‡æ–°é…ç½®ï¼Œè™½ç„¶å»ºè®®eclipseå•ç‹¬ï¼Œä½†androidSDKï¼Œå»ºè®®è¿˜æ˜¯é…åœ¨ä¸€èµ·ï¼Œ
 
-`Window -> Perferences -> Android -> SDK Location`£¬ÅäÖÃÄã±¾µØµÄ¼´¿É
+`Window -> Perferences -> Android -> SDK Location`ï¼Œé…ç½®ä½ æœ¬åœ°çš„å³å¯
 
-4¡¢eclipseÀïÃæ£¬`Help -> Install New Software`£¬µã»÷ `Add`£¬Ôö¼Ó `ADT`£¬`url`¸ø`https://dl-ssl.google.com/android/eclipse/`£¬È·¶¨¼´¿É¡£
+4ã€eclipseé‡Œé¢ï¼Œ`Help -> Install New Software`ï¼Œç‚¹å‡» `Add`ï¼Œå¢žåŠ  `ADT`ï¼Œ`url`ç»™`https://dl-ssl.google.com/android/eclipse/`ï¼Œç¡®å®šå³å¯ã€‚
 
-5¡¢µÈ¸üÐÂÄÚÈÝÏÔÊ¾³öÀ´ÒÔºó£¬È«Ñ¡£¬°²×°¼´¿É
+5ã€ç­‰æ›´æ–°å†…å®¹æ˜¾ç¤ºå‡ºæ¥ä»¥åŽï¼Œå…¨é€‰ï¼Œå®‰è£…å³å¯
 
-×¢Òâ£º¹úÄÚµÄÓÃ»§¿ÉÄÜ»áÓöµ½googleÁ¬½Ó²»ÁËµ¼ÖÂÎÞ·¨¸üÐÂµÄÎÊÌâ£¬³ýÁËVPNÒÔÍâ£¬»¹¿ÉÒÔÍ¨¹ýÐÞ¸ÄhostsµÄ·½·¨À´½â¾öµô£¬¾ÍÊÇÐÞ¸ÄhostsÎÄ¼þ£¬
+æ³¨æ„ï¼šå›½å†…çš„ç”¨æˆ·å¯èƒ½ä¼šé‡åˆ°googleè¿žæŽ¥ä¸äº†å¯¼è‡´æ— æ³•æ›´æ–°çš„é—®é¢˜ï¼Œé™¤äº†VPNä»¥å¤–ï¼Œè¿˜å¯ä»¥é€šè¿‡ä¿®æ”¹hostsçš„æ–¹æ³•æ¥è§£å†³æŽ‰ï¼Œå°±æ˜¯ä¿®æ”¹hostsæ–‡ä»¶ï¼Œ
 
-windowsµÄÔÚ `C:\Windows\System32\drivers\etc\host`
+windowsçš„åœ¨ `C:\Windows\System32\drivers\etc\host`
 
-linux µÄÔÚ `/etc/hosts`
+linux çš„åœ¨ `/etc/hosts`
 
-ÐÞ¸ÄÍê£¬¹Ø±ÕÎÄ¼þ¾ÍÉúÐ§ÁË¡£
+ä¿®æ”¹å®Œï¼Œå…³é—­æ–‡ä»¶å°±ç”Ÿæ•ˆäº†ã€‚
 
-¸ø¸ö[²»¶Ï¸üÐÂhostsµÄÒ³Ãæ](href="http://www.360kb.com/kb/2_122.html)°É£¬¸ÐÐ»ÐÁ¿àÎ¬»¤µÄÕ¾³¤¡£
+ç»™ä¸ª[ä¸æ–­æ›´æ–°hostsçš„é¡µé¢](href="http://www.360kb.com/kb/2_122.html)å§ï¼Œæ„Ÿè°¢è¾›è‹¦ç»´æŠ¤çš„ç«™é•¿ã€‚
