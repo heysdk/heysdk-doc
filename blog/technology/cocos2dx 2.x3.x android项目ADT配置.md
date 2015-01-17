@@ -14,27 +14,27 @@ cocos2dxÉı¼¶µ½3.xÒÔºó£¬Õû¸öÏîÄ¿½á¹¹µ÷ÕûºÜ¶à£¬¸öÈË¾õµÃ¸ÄµÃºÜ²»´íµÄ£¬¾ÍÏîÄ¿²ãÃæÀ´Ë
 
 2¡¢µ¼ÈëÒıÇæµÄÌá¹©µÄsrc£¬¾ßÌå²Ù×÷ÊÇ£º
 
-ADTÖĞÓÒ»÷¹¤³ÌÃû->Properties->Java Build Path->Source->Link Source->Browse¡£
+ADTÖĞ`ÓÒ»÷¹¤³ÌÃû->Properties->Java Build Path->Source->Link Source->Browse`¡£
 
-ÕÒµ½Cocos2d-xÒıÇæ¸ùÄ¿Â¼ÏÂcocos/platform/android/java/src£¬µ¼Èë£¬Ãû×Ö¸ølibcocos2dx£¬µã»÷finish£¬OK¡£
+ÕÒµ½Cocos2d-xÒıÇæ¸ùÄ¿Â¼ÏÂ`cocos/platform/android/java/src`£¬µ¼Èë£¬Ãû×Ö¸ølibcocos2dx£¬µã»÷finish£¬OK¡£
 
-3¡¢Èç¹ûÔÚwindowsÏÂ£¬ÓÃNDK±àÒë£¬ĞèÒª¸ÄBuild command£¬¾ßÌå²Ù×÷ÊÇ£ºADTÖĞÓÒ»÷¹¤³ÌÃû->Properties->C/C++ Build->Builder Settings->Build command£¬¸øNDKÄ¿Â¼ÏÂµÄndk-build.cmd¼´¿É£¬
+3¡¢Èç¹ûÔÚwindowsÏÂ£¬ÓÃNDK±àÒë£¬ĞèÒª¸ÄBuild command£¬¾ßÌå²Ù×÷ÊÇ£º`ADTÖĞÓÒ»÷¹¤³ÌÃû->Properties->C/C++ Build->Builder Settings->Build command`£¬¸øNDKÄ¿Â¼ÏÂµÄndk-build.cmd¼´¿É£¬
 
-        ${NDK_ROOT}/ndk-build.cmd
+`${NDK_ROOT}/ndk-build.cmd`
 
 4¡¢ÕÒµ½ jniÏÂÃæµÄ Android.mkÎÄ¼ş£¬Ôö¼Ó±¾µØÏîÄ¿Ä¿Â¼£º
+```make
+$(call import-add-path,$(LOCAL_PATH)/../../../../)
 
-        $(call import-add-path,$(LOCAL_PATH)/../../../../)
+include $(BUILD_SHARED_LIBRARY)[/code]
+```
+5¡¢¾²Ì¬¿â²»Ç¿ÖÆÈ«²¿Á´½Ó£¬»¹ÊÇĞŞ¸Ä Android.mk ÎÄ¼ş£¬°Ñ `LOCAL_WHOLE_STATIC_LIBRARIES` ¸Ä³É `LOCAL_STATIC_LIBRARIES`£¬µ«ÊÇ¼Ç×¡£¬**Èç¹ûÓĞÒıÓÃÒ»Ğ©ÆäËü¿â£¬¶øÇÒÆäËü¿âÓĞ±ØĞëÒªµ¼³öµÄNative´úÂë£¬Æ©Èç¸øjavaµ÷ÓÃµÄJNI´úÂë£¬¾Í²»ÄÜÕâÑù¸ÄÁË**¡£
 
-        include $(BUILD_SHARED_LIBRARY)[/code]
-
-5¡¢¾²Ì¬¿â²»Ç¿ÖÆÈ«²¿Á´½Ó£¬»¹ÊÇĞŞ¸Ä Android.mk ÎÄ¼ş£¬°Ñ LOCAL_WHOLE_STATIC_LIBRARIES ¸Ä³É LOCAL_STATIC_LIBRARIES£¬µ«ÊÇ¼Ç×¡£¬Èç¹ûÓĞÒıÓÃÒ»Ğ©ÆäËü¿â£¬¶øÇÒÆäËü¿âÓĞ±ØĞëÒªµ¼³öµÄNative´úÂë£¬Æ©Èç¸øjavaµ÷ÓÃµÄJNI´úÂë£¬¾Í²»ÄÜÕâÑù¸ÄÁË¡£
-
-Êµ¼Ê²âÊÔÏÂÀ´£¬ÕâÑù¸ÄÁËÒÔºó¼õĞ¡°ü´óĞ¡±È½ÏÓĞÏŞ£¨ÎÒÃÇÏîÄ¿µÄ.soÎÄ¼ş´ó¸Å¼õĞ¡ÁË10%-20%£©£¬cocos2dx 2.x°æ±¾´úÂëñîºÏ¶È»¹ÊÇÌ«¸ßÁË£¬ÒªÉî¶ÈÍÚ¾ò²ÅĞĞ¡£
+Êµ¼Ê²âÊÔÏÂÀ´£¬ÕâÑù¸ÄÁËÒÔºó¼õĞ¡°ü´óĞ¡±È½ÏÓĞÏŞ*£¨ÎÒÃÇÏîÄ¿µÄ.soÎÄ¼ş´ó¸Å¼õĞ¡ÁË10%-20%£©*£¬cocos2dx 2.x°æ±¾´úÂëñîºÏ¶È»¹ÊÇÌ«¸ßÁË£¬ÒªÉî¶ÈÍÚ¾ò²ÅĞĞ¡£
 
 6¡¢°ÑÏîÄ¿ÀïÃæµÄ Classes¡¢cocos2dx¡¢extensions¼¸¸öÄ¿Â¼É¾µô°É£¬×Ô¼ºÌí¼ÓÒ»ÏÂ£º
 
-C/C++ General -> Paths and Symbols -> Source Location -> Link Folder
+`C/C++ General -> Paths and Symbols -> Source Location -> Link Folder`
 
 Folder name ¸ø classes£¬Link to folder in the file system¹´ÉÏ£¬°ÑÏîÄ¿µÄ classes ¾ø¶ÔÂ·¾¶ÌîÉÏ¡£
 
@@ -42,14 +42,14 @@ Folder name ¸ø classes£¬Link to folder in the file system¹´ÉÏ£¬°ÑÏîÄ¿µÄ classes 
 
 8¡¢ÓÉÓÚÔÚµÚ2²½ÀïÃæ£¬ÎÒÃÇ°Ñlibcocos2dxÖ±½Ó¼Óµ½ÏîÄ¿ÀïÃæÁË£¬ËùÒÔ¿ÉÒÔµ½ÏîÄ¿ÅäÖÃÀïÃæ£¬°Ñlibcocos2dxµÄLibraryÉ¾µôÁË£¬Õâ¸öÏîÄ¿¶ÔÓÚ»úÆ÷ÀïÃæÓĞ¶à¸öcocos2dx°æ±¾µÄÈËÀ´Ëµ×îÍ´¿àÁË£¬Ö±½Ó¼Óµ½´úÂëÀïÃæÊÇ×îÊ¡ÊÂµÄ×ö·¨¡£
 
-Properties -> Android
+`Properties -> Android`
 
-×¢Òâ£º²»ÊÇËùÓĞµÄlibraryÏîÄ¿¶¼ÄÜÕâÑùµÄ£¬Ö»ÓĞ´¿´úÂëµÄÏîÄ¿ÄÜÕâÑù´¦ÀíÅ¶¡£
+**×¢Òâ£º²»ÊÇËùÓĞµÄlibraryÏîÄ¿¶¼ÄÜÕâÑùµÄ£¬Ö»ÓĞ´¿´úÂëµÄÏîÄ¿ÄÜÕâÑù´¦ÀíÅ¶¡£**
 
 9¡¢c++´úÂëÈç¹ûÔÚEclipseÀï´ò¿ª£¬»¹ÊÇ»á±¨Ò»¶Ñ´í£¬ÎÒ¿´pathÊ²Ã´µÄ¶¼ÊÇÉèÖÃµÄ¶ÔµÄ£¬ÔİÊ±Ã»ÌØ±ğºÃµÄ½â¾ö·½°¸£¬¼òµ¥µãµÄ´¦Àí¾ÍÊÇ°Ñc/c++µÄ´úÂë·ÖÎö¹Øµô¡£
 
-Properties -> C/C++ General -> Code Analysis
+`Properties -> C/C++ General -> Code Analysis`
 
-Ñ¡Ôñ Use project settings£¬È»ºó°ÑÏÂÃæµÄÈ«²¿¶àÑ¡¿ò¶¼¹ØÉÏ¡£
+Ñ¡Ôñ `Use project settings`£¬È»ºó°ÑÏÂÃæµÄÈ«²¿¶àÑ¡¿ò¶¼¹ØÉÏ¡£
 
-²½Öè»¹ÊÇÓĞµã¶àµÄ£¬¿ÉÒÔÊÔÊÔÎÒÃÇµÄheysdktools¹¤¾ß°ü£¬Ö´ĞĞ proccc2proj.cmd »òÕß proccc2proj.sh ¿ÉÒÔÒ»¼ü¸ã¶¨ÏîÄ¿¡£
+²½Öè»¹ÊÇÓĞµã¶àµÄ£¬¿ÉÒÔÊÔÊÔÎÒÃÇµÄ[heysdktools](https://github.com/heysdk/heysdktools)¹¤¾ß°ü£¬Ö´ĞĞ `proccc2proj.cmd` »òÕß `proccc2proj.sh` ¿ÉÒÔÒ»¼ü¸ã¶¨ÏîÄ¿¡£
