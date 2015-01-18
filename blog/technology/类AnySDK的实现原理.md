@@ -11,7 +11,8 @@ AnySDK是触控出品的手游SDK打包工具，手游研发商只需要接入An
 首先，我们拿最新的cocos2dx为例子，建立一个cocos2dx项目，简单一点，给cpp的吧
 
 然后加入自己的SDK框架类，就叫HeySDK吧，代码如下：
-``` java
+``` 
+java
 package com.heysdk.lib;
 
 import android.content.Context;
@@ -31,7 +32,8 @@ public class HeySDK {
 }
 ```
 在主activity里面，加入初始化代码
-``` java
+``` 
+java
 protected void onCreate(Bundle savedInstanceState){
   super.onCreate(savedInstanceState);
  
@@ -41,11 +43,13 @@ protected void onCreate(Bundle savedInstanceState){
 java代码就这样了，接下来改c++代码吧，因为是例子，我们就简单一点，在 HelloWorldScene.cpp 里面加一个简单的函数，调用刚写的java代码吧，记住最好加上androud的环境检查。
 
 添加一个include
-``` c++
+``` 
+c++
 #include "platform/android/jni/JniHelper.h"
 ```
 然后添加autologin函数
-``` c++
+``` 
+c++
 static int autologin()
 {
  cocos2d::JniMethodInfo minfo;
@@ -57,7 +61,8 @@ static int autologin()
 }
 ```
 最后在 HelloWorld::init() 最后返回true以前，加上自动登陆的调用。
-``` c++
+``` 
+c++
 autologin();
 ```
 实现一个 autologin 函数，简单一点，我们先出一个什么都不做的版本，然后出一个apk包，我们叫它 src 吧。
@@ -65,7 +70,8 @@ autologin();
 再对接一个sdk，我们这里拿快玩做例子，所以接入一下快玩，然后再出一个包，我们叫它 kuaiwan 好了。
 
 2个包都出好以后，先去 [apktool](http://code.google.com/p/android-apktool/) 下载一个最新的apktool，一般建议下载最新的jar即可，最新版对新的SDK打包支持得更好，现在是2.0RC3。
-``` shell
+``` 
+shell
 java -jar apktool_2.0.0rc3.jar d heysdkdemo-cc2.apk
 java -jar apktool_2.0.0rc3.jar d heysdkdemo-cc2-kuaiwan.apk
 ```
