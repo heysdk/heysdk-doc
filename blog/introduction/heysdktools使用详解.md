@@ -15,6 +15,12 @@ npm install -g heysdktools
 heysdk init proj.csv
 ```
 
+为了项目安全，我们原则上是会复制项目文件来构建一个新项目的，当然，也会修改一些代码文件，理论上来说，可以重复的对一个项目做init操作，但最好能先回滚项目，再重新init。
+
+```
+heysdk revert proj.csv
+```
+
 后面如果需要更多的渠道配置，也一样的执行
 
 ```
